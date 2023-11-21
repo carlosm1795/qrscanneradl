@@ -116,7 +116,7 @@ export default function Home({
   const InsertDataIntoDB = async () => {
     try {
       axios
-        .post("http://localhost:3000/api/registros", {
+        .post("https://registro.grootprojects.com/api/registros", {
           usuarios,
           actividad,
         })
