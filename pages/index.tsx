@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import { useState, useEffect, ChangeEvent } from "react";
 import axios from "axios";
-import { Persona } from "./models/user";
+import { Persona } from "../models/user";
 import { QrScanner } from '@yudiel/react-qr-scanner';
 import es from 'date-fns/locale/es';
-import { Actividad } from "./models/actividad";
+import { Actividad } from "../models/actividad";
 import clientPromise from '../lib/mongodb'
 import type { InferGetServerSidePropsType, GetServerSideProps } from 'next'
 import { SimpleGrid, Box } from '@chakra-ui/react'
