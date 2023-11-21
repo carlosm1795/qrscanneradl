@@ -6,11 +6,13 @@ export default async (req, res) => {
         const client = await clientPromise;
 
       let DataToInsert = [];
-      const actividad = req.body.actividad;
+      let actividad = req.body.actividad;
+      actividad.Fecha = new Date(actividad.Fecha)
       req.body.usuarios.forEach(persona => {
         DataToInsert.push({
           ...persona,
-          actividad
+          actividad,
+          
         })
 
       })

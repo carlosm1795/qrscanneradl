@@ -114,11 +114,11 @@ export default function Home({
   }
 
   const InsertDataIntoDB = async () => {
-    try {
+    try {    
       axios
         .post("https://registro.grootprojects.com/api/registros", {
           usuarios,
-          actividad,
+          actividad,      
         })
         .then((response) => {
           console.log(response)
